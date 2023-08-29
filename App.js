@@ -1,21 +1,24 @@
 import React from 'react';
-import {
-  SafeAreaView,
-  StyleSheet,
-  Text,
-} from 'react-native';
+
+import ConnectedScreen from './src/screens/connectedScreen';
+import NotConnectedScreen from './src/screens/notConnectedScreen';
+
+import { useWeb3Modal, Web3Modal } from '@web3modal/react-native';
+import { providerMetadata, sessionParams } from './src/constants/config';
 
 const App = () => {
+  const { address } = useWeb3Modal();
 
   return (
-    <SafeAreaView style={{}}>
-      <Text>Basic react native app</Text>
-    </SafeAreaView>
+    <>
+      {address ? <ConnectedScreen /> : <NotConnectedScreen />}
+      <Web3Modal
+        projectId={"5c0e3814df7c19b9f153337997c46e15"}
+        providerMetadata={providerMetadata}
+        sessionParams={sessionParams}
+      />
+    </>
   );
 }
-
-const styles = StyleSheet.create({
-
-});
 
 export default App;
