@@ -10,6 +10,7 @@ Welcome to the README of the React Native decentralized application (dApp) that 
   - [Features](#features)
   - [Prerequisites](#prerequisites)
   - [Installation](#installation)
+  - [Switching Cryptocurrency Networks](#switching-cryptocurrency-networks)
   - [Screenshots](#screenshots)
 
 ## Introduction
@@ -54,6 +55,17 @@ Once you have your project ID:
 5. In another terminal window, run the app on your Android device/emulator: `yarn android`
 
 6. Explore the app and interact with the wallet connection, message signing, and cryptocurrency transfer features.
+
+## Switching Cryptocurrency Networks
+
+If you'd like to change the cryptocurrency for a transfer within the app, you can do so by adjusting your wallet's network settings. Here's how you can achieve this:
+
+1. Open your preferred wallet app.
+2. Find the option to switch networks or chainIDs. This is usually located in the settings or network selection menu.
+3. Select the desired cryptocurrency network. For example, you might switch from Ethereum Mainnet to a test network like Ropsten or a different blockchain altogether.
+4. Confirm the network change in your wallet app.
+
+After you've switched networks in your wallet, return to the app, and you'll notice that the title of the transfer will automatically update to reflect the name of the new network. This helps you easily identify which cryptocurrency network you are currently using.
 
 ## Screenshots
 
