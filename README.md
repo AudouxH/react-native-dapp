@@ -10,6 +10,7 @@ Welcome to the README of the React Native decentralized application (dApp) that 
   - [Features](#features)
   - [Prerequisites](#prerequisites)
   - [Installation](#installation)
+  - [Screenshots](#screenshots)
 
 ## Introduction
 
@@ -53,3 +54,10 @@ Once you have your project ID:
 5. In another terminal window, run the app on your Android device/emulator: `yarn android`
 
 6. Explore the app and interact with the wallet connection, message signing, and cryptocurrency transfer features.
+
+## Screenshots
+
+![NotConnected Screen](./src/assets/screenshots/NotConnectScreen.jpg)
+![WalletConnect Modal](./src/assets/screenshots/WalletConnectModal.jpg)
+![Metamask Connection](./src/assets/screenshots/MetamaskConnection.jpg)
+![Main Screen](./src/assets/screenshots/MainScreen.jpg)
