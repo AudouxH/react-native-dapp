@@ -13,7 +13,7 @@ const App = () => {
     <>
       {address ? <ConnectedScreen /> : <NotConnectedScreen />}
       <Web3Modal
-        projectId={"5c0e3814df7c19b9f153337997c46e15"}
+        projectId={process.env['WALLET_CONNECT_PROJECT_ID']}
         providerMetadata={providerMetadata}
         sessionParams={sessionParams}
       />

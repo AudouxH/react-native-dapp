@@ -1,6 +1,6 @@
 export const providerMetadata = {
-    name: 'React native wallet connection',
-    description: 'RN dApp connection by Audouxh',
+    name: 'React native Dapp',
+    description: 'RN dApp connection, sign and transfer by Audouxh',
     url: 'https://walletconnect.com/',
     icons: ['https://avatars.githubusercontent.com/u/37784886'],
 };

@@ -2,25 +2,23 @@ import React from 'react';
 
 import {
     SafeAreaView,
+    ScrollView,
     StyleSheet,
-    Text,
-    TouchableOpacity,
 } from 'react-native';
 
-import { useWeb3Modal } from '@web3modal/react-native';
+import Profil from '../components/profil';
+import SignMessage from '../components/signMessage';
+import TransferETH from '../components/transferCrypto';
 
 const ConnectedScreen = () => {
-  const { address, provider } = useWeb3Modal();
 
     return (
         <SafeAreaView style={styles.container}>
-            <Text style={styles.title}>you are now connect !</Text>
-            {address ? <Text style={styles.subtitle}>With the address: {address}</Text> : null}
-            {provider ?
-                <TouchableOpacity onPress={async () => personalSign()}>
-                    <Text>Sign a message</Text>
-                </TouchableOpacity>
-                : null}
+            <Profil />
+            <ScrollView style={styles.scrollview}>
+                <SignMessage />
+                <TransferETH />
+            </ScrollView>
         </SafeAreaView>
     );
 }
@@ -34,17 +32,9 @@ const styles = StyleSheet.create({
         justifyContent: 'flex-start',
         alignItems: 'center'
     },
-    title: {
-        fontSize: 20,
-        fontWeight: 'bold',
-        marginTop: 50,
-    },
-    subtitle: {
-        fontSize: 16,
-        color: 'gray',
-        marginTop: 20,
-        textAlign: 'center',
-        width: '90%',
+    scrollview: {
+        width: '100%',
+        height: '90%'
     }
 });
 

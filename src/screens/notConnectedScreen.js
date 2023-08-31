@@ -8,7 +8,7 @@ import {
     View,
 } from 'react-native';
 
-import IonIcons from 'react-native-vector-icons/Ionicons';
+// import Icon from 'react-native-vector-icons/Ionicons';
 
 import '@walletconnect/react-native-compat';
 import { useWeb3Modal } from '@web3modal/react-native';
@@ -19,7 +19,7 @@ const NotConnectedScreen = () => {
     return (
         <SafeAreaView style={styles.container}>
             <View style={styles.connection}>
-                <IonIcons name="wallet-outline" size={100} color="#2081e2" />
+            {/* <Icon name="wallet-outline" size={100} color="blue" /> */}
                 <Text style={styles.title}>Your wallet is not connected</Text>
                 <Text style={styles.subtitle}>Connect to any supported Wallet connect to have access to your data</Text>
                 <TouchableOpacity onPress={open} style={styles.button}>
