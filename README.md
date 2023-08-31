@@ -38,24 +38,18 @@ Once you have your project ID:
 
 1. Create a `.env` file in the root directory of your project.
 2. Add the following line to your `.env` file, replacing `YOUR_WALLET_CONNECT_PROJECT_ID` with your actual project ID:
-
-   `WALLET_CONNECT_PROJECT_ID=YOUR_WALLET_CONNECT_PROJECT_ID`
+`WALLET_CONNECT_PROJECT_ID=YOUR_WALLET_CONNECT_PROJECT_ID`
 
 ## Installation
 
-1. Clone this repository:
-   `git clone https://github.com/your-username/your-react-native-dapp.git`
+1. Clone this repository: `git clone https://github.com/your-username/your-react-native-dapp.git`
 
-2. Navigate to the project directory:
-   `cd your-react-native-dapp`
+2. Navigate to the project directory: `cd your-react-native-dapp`
 
-3. Install the dependencies:
-   `npm install`
+3. Install the dependencies: `npm install`
 
-4. Open a new terminal window for running the Metro Bundler:
-   `yarn start`
+4. Open a new terminal window for running the Metro Bundler: `yarn start`
 
-5. In another terminal window, run the app on your Android device/emulator:
-   `yarn android`
+5. In another terminal window, run the app on your Android device/emulator: `yarn android`
 
 6. Explore the app and interact with the wallet connection, message signing, and cryptocurrency transfer features.
